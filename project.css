@@ -1,0 +1,57 @@
+body {
+    background-image: url(https://cdn.wallpapersafari.com/91/19/GI5ACq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ }
+
+ .nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+    
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+.nav li {
+    margin-left: 40px;
+    font-size: 60px;
+    font-family: fantasy;
+    padding-top: 50px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+
+.menu li a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0); 
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+}
+
+.menu li a:hover::before {
+    transform: scaleX(1);  
+    transform-origin: bottom left;  
+}
+ 
