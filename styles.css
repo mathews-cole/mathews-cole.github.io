@@ -106,7 +106,6 @@ html {
      h1 {
          font-size: 27px;
          color: white;
-         font-family: fantasy;
          padding-top: 210px;
          margin-left: 22px;
      }
@@ -147,14 +146,12 @@ html {
      .Achievments {
          font-size: 25px;
          color: white;
-         font-family: fantasy;
          margin-top: 440px;
      }
      
      .AboutMe {
          font-size: 25px;
          color: white;
-         font-family: fantasy;
      }
      .menu li a {
          position: relative;
