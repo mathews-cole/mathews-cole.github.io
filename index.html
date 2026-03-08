@@ -3,50 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-   
-    <nav class="nav">
-<ul class="menu">
-    <li id="Home"><a href="#Home"> Home</a></li>
-     <li><a href="#Achievments">Achievments</a></li>
-     <li><a href="#AboutMe">About Me</a></li>
-     <li><a href="project.html">My Projects</a></li>
-</ul>
-  </nav>
-   
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">My Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  
-   <div class="home">
-    <h1>My Portfolio</h1>
-</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p class="subtitle">IT Student & Developer</p>
+        </div>
+    </section>
 
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>N/A</h3>
+                    <p></p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">💻</div>
+                    <h3>Certification</h3>
+                    <p>Completed many Trycahckme rooms and CCNA courses</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🚀</div>
+                    <h3>Hackathon</h3>
+                    <p>Participated in Cyber Security</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="Achievments">
-       <section id="Achievments">
-        <p>Achievments</p>
-       </section>
-    </div>
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm an IT college student who is passionate about cyber secuirty, coding and networking. Currently learning cyber security with coding on the side as my own hobby. I also have had experience with databases and networking, both physcial and digital that include configuring switches and routers.</p>
+                    <p>I enjoy making projects that that can show of my skills and just for my own personal benefit.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Networking</span>
+                        <span>Communication</span>
+                        <span>Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="AboutMe">
-       <section id="AboutMe">
-        <p>About Me</p>
-        <div class="AboutMeP">
-        <p>I'm 17 years old who is enrolled in college on a Cyber Security course. <br> I have recently got into coding in all sorts of languages like Html, css, <br> javaScript, PhP, Python ect. I also do enjoy gaming, i'm a big gamer <br> who plays a variety of different game's. I have even won money off <br> playing these game's before which is another reason i like to game <br> as i am very competetive! Another hobby of mine is football, i used <br> to play for a team and played for years, i ended up stopping to focus <br> on other stuff like college but still stay in touch every now and then <br> and watch games when i can. I like to focus on goals and exceed my <br> own expectation in the things i enjoy. </p>
-    </div>
-       </section>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>Project 1</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>N/A</h3>
+                        <p></p>
+                        <div class="project-tags">
+                            <span>N/A</span>
+                            <span>N/A</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>Project 2</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>N/A</h3>
+                        <p></p>
+                        <div class="project-tags">
+                            <span>N/A</span>
+                            <span>N/A</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>Project 3</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>N/A</h3>
+                        <p></p>
+                        <div class="project-tags">
+                            <span>N/A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. Built with dedication.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
