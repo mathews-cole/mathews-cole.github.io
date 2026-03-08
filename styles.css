@@ -1,191 +1,284 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-   background-image: url(https://cdn.wallpapersafari.com/91/19/GI5ACq.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-h1 {
-    font-size: 140px;
-    color: white;
-    font-family: fantasy;
-    padding-top: 160px;
-    margin-left: 40px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.nav {
+/* Navigation */
+nav {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 1.5rem 0;
     position: sticky;
     top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 999;
-    
+    z-index: 100;
 }
 
-.nav ul {
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
     display: flex;
     list-style: none;
+    gap: 3rem;
 }
-.nav li {
-    margin-left: 40px;
-    font-size: 60px;
-    font-family: fantasy;
-    padding-top: 50px;
-}
-.nav a {
+
+.nav-links a {
+    color: #ffffff;
     text-decoration: none;
-    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+    text-transform: none;
 }
 
+.nav-links a:hover {
+    color: #888;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 6rem 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #888;
+    font-weight: 400;
+}
+
+/* Section Styles */
 section {
-    height: 100vh;
-    padding: 20px;
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+/* Achievements */
+.achievements {
+    background-color: #1a1a1a;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    border-color: #666;
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-card p {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+/* About Section */
+.about {
+    background-color: #222;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    margin-bottom: 3rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.skills h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tags span {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #1a1a1a;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #666;
+}
+
+.project-image {
+    height: 200px;
+    background-color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: 600;
+    border-bottom: 1px solid #444;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    color: #aaa;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-tags span {
+    background-color: #1a1a1a;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #888;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    border-top: 1px solid #333;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1.5rem;
+    }
     
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-
-
-.Achievments {
-    font-size: 100px;
-    color: white;
-    font-family: fantasy;
-    margin-top: 300px;
-}
-
-.AboutMe {
-    font-size: 100px;
-    color: white;
-    font-family: fantasy;
-}
-.menu li a {
-    position: relative;
-    padding-bottom: 5px;
-}
-
-.menu li a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transform: scaleX(0); 
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-in-out;
-}
-
-.menu li a:hover::before {
-    transform: scaleX(1);  
-    transform-origin: bottom left;  
-}
-
-.AboutMeP {
-    font-size: 30px;
-    font-family: Liter;
-    padding-left: 60px;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-@media only screen and (max-width: 1000px) {
-
-
-    body {
-        background-image: url(https://cdn.wallpapersafari.com/91/19/GI5ACq.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-     }
-     
-     h1 {
-         font-size: 27px;
-         color: white;
-         padding-top: 210px;
-         margin-left: 22px;
-     }
-     
-     .nav {
-         position: sticky;
-         top: 0;
-         width: 100%;
-         display: flex;
-         justify-content: flex-end;
-         z-index: 999;
-         
-     }
-     
-     .nav ul {
-         display: flex;
-         list-style: none;
-     }
-     .nav li {
-         margin-left: 40px;
-         font-size: 15px;
-         font-family: fantasy;
-         padding-top: 20px;
-     }
-     .nav a {
-         text-decoration: none;
-         color: white;
-     }
-     
-     section {
-         height: 100vh;
-         padding: 20px;
-         
-     }
-     
-     
-     
-     .Achievments {
-         font-size: 25px;
-         color: white;
-         margin-top: 440px;
-     }
-     
-     .AboutMe {
-         font-size: 25px;
-         color: white;
-     }
-     .menu li a {
-         position: relative;
-         padding-bottom: 5px;
-     }
-     
-     .menu li a::before {
-         content: "";
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         width: 100%;
-         height: 2px;
-         background-color: white;
-         transform: scaleX(0); 
-         transform-origin: bottom right;
-         transition: transform 0.25s ease-in-out;
-     }
-     
-     .menu li a:hover::before {
-         transform: scaleX(1);  
-         transform-origin: bottom left;  
-     }
-     
-     .AboutMeP {
-         font-size: 30px;
-         font-family: Liter;
-         padding-left: 10px;
-     }
-     
-     html {
-         scroll-behavior: smooth;
-     }
-
-
-
-}
