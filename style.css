@@ -254,6 +254,15 @@ footer {
     text-align: center;
 }
 
+.info h2 {
+    font-size: 2rem;
+}
+
+.info p {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
 footer p {
     color: #666;
     font-size: 0.9rem;
@@ -281,4 +290,5 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
 
