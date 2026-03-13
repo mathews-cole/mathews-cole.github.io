@@ -5,6 +5,27 @@
     box-sizing: border-box;
 }
 
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.hero h1 {
+    animation: appear linear;
+    animation: appear 1s linear;
+}
+
+.hero .subtitle {
+    animation: appear linear;
+    animation: appear 1.5s linear;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #1a1a1a;
@@ -80,7 +101,10 @@ nav .container {
     font-size: 1.25rem;
     color: #888;
     font-weight: 400;
+    padding-bottom: 30px;
 }
+
+
 
 /* Section Styles */
 section {
